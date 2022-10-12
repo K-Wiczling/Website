@@ -1,0 +1,49 @@
+/* VARIABLES */
+:root {
+    --light: #ECDBBA;
+    --braker: #C84B31;
+    --dark: #2D4263;
+    --darker: #191919;
+
+    --headerHeight: 60px;
+    --footerHeight: 20px;
+}
+/* INITIAL */
+* {
+    
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+/* CONTAINER */
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+/* General */
+button {
+    color: var(--light);
+    width: 100px;
+    height: 40px;
+    background-color: var(--dark);
+    border-radius: 10px 5px 10px 5px;
+    transition: background-color 0.4s,  margin 0.4s, width 0.4s;
+}
+button:hover {
+    background-color: var(--braker);
+    width: 120px;
+}
+
+/* RWD */
+@media only screen and (max-width: 850px) {
+    
+}
+@media only screen and (max-width: 450px) {
+    
+}
+@media only screen and (max-width: 360px) {
+
+}
