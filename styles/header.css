@@ -3,27 +3,21 @@ header {
     overflow: hidden;
     position: fixed;
     top: 0;
-    padding: 5px;
     z-index: 9;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: var(--headerHeight);
-    border-bottom: 2px solid var(--darker);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Nav-bar */
 menu#navbar {
     display: flex;
     justify-content: space-around;
-    padding-right: 5px;
 }
 
 /* Popup menu */
-#hamburger {
-    display: none;
-}
 menu#popup-menu {
     margin: 0;
     padding: 0;
@@ -31,16 +25,28 @@ menu#popup-menu {
     display: none;
     width: 100vw;
     top: var(--headerHeight);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.6);
 }
-
+/* Button  */
+header button {
+    height: 100%;
+    margin-left: 3px;
+    color: var(--darker);
+    background-color: transparent;
+}
+header button:hover {
+    color: var(--braker);
+}
+.blog-btn {
+    /* background-color: var(--darker); */
+}
 #popup-menu button:hover {
     width: 65%
 }
-menu button, header button {
-    height: 100%;
-    border-radius: 20px 10px 20px 10px;
-    margin: 2px;
+
+
+#hamburger {
+    display: none;
 }
 
 /* Logo section */
@@ -75,7 +81,6 @@ menu button, header button {
     menu button {
         height: 50px;
         width: 65%;
-        border-radius: 20px 10px 20px 10px;
         display: block;
         margin: auto;
         margin-top: 10px;
@@ -83,7 +88,9 @@ menu button, header button {
     }    
 }
 @media only screen and (max-width: 450px) {
-
+    #logo {
+        display: none;
+    }
     
 }
 @media only screen and (max-width: 360px) {
