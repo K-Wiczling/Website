@@ -4,7 +4,7 @@ footer {
     height: var(--footerHeight);
     position: fixed;
     bottom: 0;
-    padding-left: 10px;
+    padding-left: 25px;
     font-style: italic;
     background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
