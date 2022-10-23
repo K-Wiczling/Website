@@ -1,72 +1,69 @@
 /* HEADER */
 header {
-    overflow: hidden;
     position: fixed;
     top: 0;
     z-index: 9;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     width: 100%;
     height: var(--headerHeight);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: var(--elementsBackground);
 }
 
-/* Nav-bar */
-menu#navbar {
+/* MENU */
+
+/* Normal divices Nav-bar */
+#navbar {
     display: flex;
     justify-content: space-around;
 }
 
-/* Popup menu */
-menu#popup-menu {
+/*Small divice popup menu */
+#popup-menu {
     margin: 0;
     padding: 0;
     position: fixed;
     display: none;
     width: 100vw;
     top: var(--headerHeight);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: var(--elementsBackground);
+
     height: 0%;
     overflow: hidden;
     transition: height 0.6s;
 }
-/* Button  */
-header button {
+
+/* MANU ITEMS */
+
+/* Menu link  */
+menu a {
+    text-decoration: none;
+    text-align: center;
     height: 100%;
+    padding-top: 20px;
+    width: 80px;
     margin-left: 3px;
-    color: var(--darker);
     background-color: transparent;
 }
-header button:hover {
-    color: var(--braker);
-}
-.logo-btn {
-    width: 150px;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-#popup-menu button:hover {
-    width: 65%
+
+/* Active page */
+.active-menu-item {
+    color: var(--dark);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-
+/* Hamburger icon */
 #hamburger {
     display: none;
 }
 
-/* Logo section */
+/* LOGO */
 #logo {
-    height: 100%;
+    padding-top: 20px;
+    width: 150px;
+    font-weight: bold;
 }
-#logo-img{
-    height: 100%;
-    transition: width 0.4s, height 0.4s;
-}
-#logo-img:hover{
-    width: 110%;
-    height: 110%;
-}
-
 
 /* RWD */
 @media only screen and (max-width: 850px) {

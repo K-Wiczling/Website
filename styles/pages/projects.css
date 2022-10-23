@@ -1,0 +1,24 @@
+.projects-card {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    justify-self: center;
+}
+#projects-contaier {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.projects-card img{
+    height: 150px;
+    width: auto;
+}
+
+.projects-card button {
+    border: 1px solid var(--dark);
+    color: var(--dark);
+}

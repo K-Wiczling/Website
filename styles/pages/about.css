@@ -1,0 +1,12 @@
+#about-img {
+    height: 300px;
+}
+#about-text {
+    padding: 10px;
+}
+#about-me-contaier {
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}

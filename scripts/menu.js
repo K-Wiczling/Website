@@ -1,12 +1,3 @@
-
-// Buttons in the navbar
-const fetchButtons = document.getElementsByClassName('nav-bar-buttons');
-for (const btn of fetchButtons) {
-    btn.addEventListener('click', (e) => {
-        toggleContent(e.target.id);
-    })
-}
-
 // Toggle popoup menu
 const togglePopupMenu = () => {
 
