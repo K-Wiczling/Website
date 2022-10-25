@@ -10,6 +10,8 @@
 
     --headerHeight: 60px;
     --footerHeight: 40px;
+    --paddingHorizontal: 30px;
+    --paddingTop: 30px;
 }
 
 /* INITIAL */
@@ -27,6 +29,9 @@
 /* GENERAL */
 
 /* Headers */
+h2, h3, p {
+    color: var(--lightText);
+}
 h2 {
     font-size: 2rem;
     margin: auto;
@@ -61,6 +66,13 @@ button:hover {
     font-size: 1rem;
 }
 
+/* Social media */
+.social-buttons {
+
+}
+.social-buttons:hover {
+    fill: var(--braker)
+}
 
 /* RWD */
 @media only screen and (max-width: 850px) {

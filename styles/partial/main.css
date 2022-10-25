@@ -1,4 +1,5 @@
 main {
+    padding-top: var(--headerHeight);
     background-color: black;
     height: 100vh;
     width: 100vw;
@@ -8,7 +9,8 @@ main {
     color: var(--lightText);
 }
 #page-container {
-    padding-top: var(--headerHeight);
+    padding-left: var(--paddingHorizontal);
+    padding-top: var(--paddingTop);
     margin-bottom: var(--footerHeight);
     width: 100vw;
 }

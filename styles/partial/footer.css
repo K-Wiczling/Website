@@ -4,15 +4,28 @@ footer {
     height: var(--footerHeight);
     position: fixed;
     bottom: 0;
-    padding-left: 25px;
+    padding-left: var(--paddingHorizontal);
     font-style: italic;
     background-color: var(--elementsBackground);
     width: 100%;
 }
+/* Text container */
+#footer-text {
+    
+}
+/* Social media buttoncs container */
+#social-container {
+    width: 100px;
+    display: inline-flex;
+    justify-content: space-between;
+}
 
 /* RWD */
 @media only screen and (max-width: 850px) {
-    
+    #social-container {
+        width: 100px;
+        display: flex;
+    }
 }
 @media only screen and (max-width: 450px) {
     

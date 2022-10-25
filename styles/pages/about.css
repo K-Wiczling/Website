@@ -7,6 +7,31 @@
 #about-me-contaier {
     display: flex;
     overflow: hidden;
-    width: 90%;
+    width: 700px;
     margin: auto;
+}
+
+/* RWD */
+@media only screen and (max-width: 850px) {
+    #about-me-contaier {
+        width: 90%;
+    }
+    #about-me-contaier p{
+        font-size: 0.85rem;
+    }
+    #about-img {
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #about-me-contaier {
+        display: block;
+    }
+    #about-img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 360px) {
+
 }

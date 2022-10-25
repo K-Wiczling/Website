@@ -2,6 +2,8 @@
 header {
     position: fixed;
     top: 0;
+    padding-left: var(--paddingHorizontal);
+    padding-right: var(--paddingHorizontal);
     z-index: 9;
     display: flex;
     justify-content: space-between;
@@ -61,13 +63,13 @@ menu a {
 /* LOGO */
 #logo {
     padding-top: 20px;
-    width: 150px;
+    text-align: center;
     font-weight: bold;
 }
 
 /* RWD */
 @media only screen and (max-width: 850px) {
-    menu#navbar{
+    #navbar{
         display: none;
     }
     #hamburger {
@@ -78,11 +80,11 @@ menu a {
         justify-content: space-between;
         padding: 0;
     }
-    menu#popup-menu {
+    #popup-menu {
         display: block;
         /* margin-top: var(--headerHeight); */
     }
-    menu button {
+    menu a {
         height: 50px;
         width: 65%;
         display: block;
