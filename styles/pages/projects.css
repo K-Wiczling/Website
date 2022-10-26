@@ -13,12 +13,16 @@
     row-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.projects-card h3 {
+    color: black;
+}
 .projects-card img{
-    height: 150px;
+    height: 120px;
     width: auto;
 }
 
 .projects-card button {
+    display: block;
     border: 1px solid var(--dark);
     color: var(--dark);
 }

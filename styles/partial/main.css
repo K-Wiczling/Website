@@ -9,7 +9,6 @@ main {
     color: var(--lightText);
 }
 #page-container {
-    padding-left: var(--paddingHorizontal);
     padding-top: var(--paddingTop);
     margin-bottom: var(--footerHeight);
     width: 100vw;
