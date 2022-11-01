@@ -1,5 +1,5 @@
 //Representation of the Single Card
-export const card = (c) => {
+export const card = (c, showProject) => {
     //Single card Container
     const cardElement = document.createElement('div');
     cardElement.className = 'projects-card';
@@ -15,11 +15,19 @@ export const card = (c) => {
     //Discover Button
     const buttonElement = document.createElement('button');
     buttonElement.innerText = 'Discover';
-    buttonElement.setAttribute( 'onclick', `showProject('${c.name}')`) ;
+    buttonElement.addEventListener('click', () => {
+        showProject(c.name);
+    });
+    
+    //Link  
+    // const aElement = document.createElement('a');
+    // aElement.innerText = 'Discover';
+    // aElement.href = c.source;
 
     //Append all card children elemens 
     cardElement.appendChild(h3Element);
     cardElement.appendChild(imageElement);
+    // cardElement.appendChild(aElement);
     cardElement.appendChild(buttonElement);
     
     return cardElement;
