@@ -1,8 +1,16 @@
 //Representation of the Single Card
 export const card = (c, showProject) => {
+    
+    //Card Wrapper
+    const cardWrapper = document.createElement('div');
+    cardWrapper.className = 'card-wrapper';
+
     //Single card Container
     const cardElement = document.createElement('div');
     cardElement.className = 'projects-card';
+    cardElement.addEventListener('click', () => {
+        showProject(c.name);
+    });
 
     // Header for the card
     const h3Element = document.createElement('h3');
@@ -11,24 +19,11 @@ export const card = (c, showProject) => {
     //Image for the card
     const imageElement = document.createElement('img');
     imageElement.src = c.img;
-    
-    //Discover Button
-    const buttonElement = document.createElement('button');
-    buttonElement.innerText = 'Discover';
-    buttonElement.addEventListener('click', () => {
-        showProject(c.name);
-    });
-    
-    //Link  
-    // const aElement = document.createElement('a');
-    // aElement.innerText = 'Discover';
-    // aElement.href = c.source;
 
     //Append all card children elemens 
+    cardWrapper.appendChild(cardElement);
     cardElement.appendChild(h3Element);
     cardElement.appendChild(imageElement);
-    // cardElement.appendChild(aElement);
-    cardElement.appendChild(buttonElement);
-    
-    return cardElement;
+   
+    return cardWrapper;
 }

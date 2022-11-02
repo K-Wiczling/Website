@@ -6,7 +6,7 @@
     --darker: #191919;
     --lightText: white;
 
-    --elementsBackground: rgba(255, 255, 255, 0.6);
+    --elementsBackground: black;
 
     --headerHeight: 60px;
     --footerHeight: 40px;
@@ -17,7 +17,7 @@
 /* INITIAL */
 * {
     font-family: 'Times New Roman', Times, serif;
-    color: var(--darker);
+    color: var(--lightText);
 
     box-sizing: border-box;
     margin: 0;

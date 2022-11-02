@@ -57,9 +57,12 @@ menu a {
 
 /* Hamburger icon */
 #hamburger {
+    fill: var(--lightText);
     display: none;
 }
-
+#hamburger:hover {
+    fill: var(--braker);
+}
 /* LOGO */
 #logo {
     padding-top: 20px;
