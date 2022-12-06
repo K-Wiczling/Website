@@ -20,8 +20,22 @@
 
             <!-- Page content -->
             <div id="page-container" >
-                    <h2>Contact</h2>
-            </div>
+                <h2>Contact</h2>
+                <div id="contact-container">
+                    <form action="/action_page.php">
+                        <label for="fname">E-mail</label>
+                        <input type="email" id="fname" name="firstname" placeholder="E-mail">
+                    
+                        <label for="lname">Subject</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Subject">
+                    
+                        <label for="subject">Message</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input id="send" type="button" value="Send">
+                    </form>
+                </div>
+            </div> 
         </main>
         
         <!-- Footer -->
@@ -31,6 +45,7 @@
 
         <!-- Javascript -->
         <script src="../scripts/index.js" type="module"></script>
+        <link href="../styles/pages/contact.css" rel="stylesheet">
 
     </body>
 </html>

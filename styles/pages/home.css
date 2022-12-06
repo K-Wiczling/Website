@@ -1,0 +1,12 @@
+#home-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items:  center;
+}
+#landing-image{
+    width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
