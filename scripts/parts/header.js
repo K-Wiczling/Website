@@ -8,7 +8,6 @@ const header =
     <a href="./projects.html" >Projects</a>
     <a href="./about.html" >About Me</a>
     <a href="./contact.html" >Contact</a>
-    <a href="./blog.html" class=" blog-btn" >Blog</a>
 </menu>
 
 <!-- Small divice popup menu -->
@@ -24,7 +23,6 @@ const header =
     <a href="./projects.html">Projects</a>
     <a href="./about.html">About Me</a>
     <a href="./contact.html" >Contact</a>
-    <a href="./blog.html" class="blog-btn" >Blog</a>
 </menu>`;
 
 document.getElementById('header').innerHTML = header;

@@ -1,5 +1,5 @@
 //Representation of the Single Card
-export const card = (c, showProject) => {
+export const card = (index, c, showProject) => {
     
     //Card Wrapper
     const cardWrapper = document.createElement('div');
@@ -9,7 +9,7 @@ export const card = (c, showProject) => {
     const cardElement = document.createElement('div');
     cardElement.className = 'projects-card';
     cardElement.addEventListener('click', () => {
-        showProject(c.name);
+        showProject(index);
     });
 
     // Header for the card

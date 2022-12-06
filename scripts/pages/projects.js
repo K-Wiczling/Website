@@ -1,21 +1,38 @@
 import { projectsList } from '../components/projects-list.js';
 import { card } from '../components/card.js'
 
-document.getElementById('modal').style.display = 'none';
+// References
+const modal = document.getElementById('modal');
+const repoBtn = document.getElementById('repo-ref');
+const projectBtn = document.getElementById('app-ref');
+const header = document.getElementById('modal-header');
+const projectDispaly = document.getElementById('project-display')
 
-const toggleModal = (name) => {
-    if(document.getElementById('modal').style.display === 'none'){
-        document.getElementById('modal').style.display = 'block';
-    }
-    else {
-        document.getElementById('modal').style.display = 'none';
-    }
+// Set default style to not display modal
+modal.style.display = 'none';
 
-    document.getElementById('modal-header').innerText = name;
+// Toggle modal window
+const toggleModal = (index) => {
+    modal.style.display === 'none' ? modal.style.display = 'block' : modal.style.display = 'none';
+    if(modal.style.display === 'block') {
+        fillModal(index);
+    }
 }
+
+const fillModal = (index) => {
+    const project = projectsList[index]
+    header.innerText = project.name;
+    
+    console.log(project);
+    repoBtn.href = project.repoSrc;
+    projectBtn.href = project.appSrc;
+
+    projectDispaly.src = project.appSrc;
+} 
 
 document.getElementById('close-modal').addEventListener('click', toggleModal);
 
-for (const project of projectsList) {
-    document.getElementById('projects-contaier').appendChild(card(project, toggleModal));
-}
+// Dispaly all projects
+projectsList.map((current, index) => {
+    document.getElementById('projects-contaier').appendChild(card(index, current, toggleModal));
+});
