@@ -1,6 +1,7 @@
 /* FOOTER */
 footer {
     /* border-top: 2px  solid var(--darker); */
+    font-size: 1.1rem;
     height: var(--footerHeight);
     position: fixed;
     bottom: 0;
@@ -8,10 +9,12 @@ footer {
     font-style: italic;
     background-color: var(--elementsBackground);
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 /* Text container */
 #footer-text {
-    
+    margin-right: 20px;
 }
 /* Social media buttoncs container */
 #social-container {

@@ -2,11 +2,16 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items:  center;
+    align-items: center;
 }
 #landing-image{
-    width: 300px;
-    max-height: 300px;
+    width: 310px;
+    max-height: 310px;
     object-fit: cover;
     border-radius: 100%;
     margin-bottom: 20px;
+    transition: border 0.4s;
+}
+#landing-image:hover {
+    border: 5px solid black;
 }
