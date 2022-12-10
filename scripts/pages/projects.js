@@ -20,10 +20,11 @@ const toggleModal = (index) => {
 }
 
 const fillModal = (index) => {
+    console.log(projectsList[index]);
+
     const project = projectsList[index]
     header.innerText = project.name;
     
-    console.log(project);
     repoBtn.href = project.repoSrc;
     projectBtn.href = project.appSrc;
 
