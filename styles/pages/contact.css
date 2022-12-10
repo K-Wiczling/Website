@@ -3,6 +3,9 @@
     grid-template-columns: 2fr 1fr;
     justify-items: center;
 }
+.social-icons-contact {
+    width: 100%;
+}
 /* Contact form */
 input {
     width: 400px;
