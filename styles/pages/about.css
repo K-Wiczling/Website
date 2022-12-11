@@ -2,7 +2,7 @@
     height: 300px;
 }
 #about-text {
-    padding: 10px;
+    padding: 0px 10px 10px 10px ;
 }
 #about-me-contaier {
     display: flex;
@@ -10,7 +10,9 @@
     width: 700px;
     margin: auto;
 }
-
+h3 {
+    border-top: 1px solid white;
+}
 /* RWD */
 @media only screen and (max-width: 850px) {
     #about-me-contaier {

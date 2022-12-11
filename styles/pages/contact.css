@@ -11,10 +11,13 @@ input {
     width: 400px;
     display: block;
     margin-bottom: 20px;
+    height: 20px;
 }
 textarea {
     margin-bottom: 20px;
     width: 400px;
+    max-width: 400px;
+    min-height: 200px;
 }
 label {
     width: 400px;
@@ -23,9 +26,23 @@ label {
 }
 #send {
     width: 100px;
+    justify-self: start;
 }
 form {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+}
+#contact-info {
+    justify-self: start;
+}
+#contact-social {
+    display: flex;
+    margin-top: 10px;
+}
+#mail-contact{
+    margin-bottom: 20px;
+}
+.single-contact {
+    margin-bottom: 5px;
 }

@@ -1,9 +1,9 @@
 const footer =
     `
-    <div class="footer-container">
-        <span id="footer-text">
-            Created by Karol Wiczling 
-        </span>
+    <div >
+        <p id="footer-text">
+            Created by Karol Wiczling
+        </p>
 
         <div id="social-container">
             <!-- Github -->

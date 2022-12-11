@@ -19,7 +19,6 @@
 .card-wrapper:hover {
     filter: grayscale(0.5);
     padding: 1px;
-    color: var(--dark);
 
 }
 .projects-card {
@@ -33,11 +32,13 @@
     width: 100%;
     height: 100%;
 }
+
 h3 {
     width: 90%;
     text-align: center;
     border-bottom: 1px solid white;
 }
+
 .discover-link {
     border: 1px solid var(--dark);
 }

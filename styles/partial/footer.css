@@ -1,20 +1,24 @@
 /* FOOTER */
 footer {
-    /* border-top: 2px  solid var(--darker); */
     font-size: 1.1rem;
     height: var(--footerHeight);
     position: fixed;
     bottom: 0;
-    padding-left: var(--paddingHorizontal);
     font-style: italic;
     background-color: var(--elementsBackground);
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
+
 /* Text container */
 #footer-text {
-    margin-right: 20px;
+    display: inline;
+    width: 200px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 20px;
 }
 /* Social media buttoncs container */
 #social-container {
@@ -25,13 +29,25 @@ footer {
 
 /* RWD */
 @media only screen and (max-width: 850px) {
-    #social-container {
-        width: 100px;
-        display: flex;
-    }
+    
 }
 @media only screen and (max-width: 450px) {
-    
+    .footer-container {
+        width: 250px;
+    }
+    #footer-text { 
+        display: block;
+        margin-bottom: 5px;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    #social-container {
+        padding: 0 15px 0 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 @media only screen and (max-width: 360px) {
 
