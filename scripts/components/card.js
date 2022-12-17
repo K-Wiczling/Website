@@ -8,22 +8,29 @@ export const card = (index, c, showProject) => {
     //Single card Container
     const cardElement = document.createElement('div');
     cardElement.className = 'projects-card';
-    cardElement.addEventListener('click', () => {
-        showProject(index);
-    });
+    
 
     // Header for the card
     const h3Element = document.createElement('h3');
     h3Element.innerText = c.name;
 
-    //Image for the card
+    // Image for the card
     const imageElement = document.createElement('img');
     imageElement.src = c.img;
 
-    //Append all card children elemens 
+    // Explore button
+    const exploreButton = document.createElement('button');
+    exploreButton.className = 'explore-button';
+    exploreButton.innerText = "Explore"
+    exploreButton.addEventListener('click', () => {
+        showProject(index);
+    });
+
+    // Append all card children elemens 
     cardWrapper.appendChild(cardElement);
     cardElement.appendChild(h3Element);
     cardElement.appendChild(imageElement);
+    cardElement.appendChild(exploreButton);
    
     return cardWrapper;
 }

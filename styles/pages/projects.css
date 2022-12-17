@@ -8,19 +8,18 @@
     color: white;
 }
 .card-wrapper {
-    width: 250px;
-    height: 200px;
+    width: 290px;
+    height: 250px;
     padding: 10px;
     transition: padding 0.4s;
     justify-self: center;
-    filter: grayscale(1);
-
+    
 }
+
 .card-wrapper:hover {
-    filter: grayscale(0.5);
-    padding: 1px;
-
+    padding: 0;
 }
+
 .projects-card {
     border: 1px solid white;
     border-radius: 5px;
@@ -33,6 +32,16 @@
     height: 100%;
 }
 
+.explore-button {
+    background-color: transparent;
+    border: 1px solid var(--braker);
+    border-radius: 3px;
+    color: white;
+    padding: 2px;
+}
+.explore-button:hover {
+    color: var(--braker);
+}
 h3 {
     width: 90%;
     text-align: center;
@@ -43,11 +52,67 @@ h3 {
     border: 1px solid var(--dark);
 }
 .projects-card img{
-    height: 120px;
+    height: 130px;
     width: auto;
     border-radius: 2px;
+    filter: grayscale(1);
+    transition: grayscale 0.4s;
+}
+.projects-card img:hover {
+    filter: grayscale(0.5);
+    padding: 1px;
+
 }
 
+/* Modal */
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+}
+
+#close-modal {
+    position: absolute;
+    right: 0px;
+    float: top;
+    width: 50px;
+    height: 50px;
+    z-index: 150;
+    transition: all 0.4s;
+}
+#close-modal:hover {
+    fill: var(--braker);
+    width: 60px;
+    height: 60px;
+}
+
+iframe {
+    display: block;
+    width: 70vw;
+    height: 70vh;
+    border: 1px solid var(--braker);
+    margin: 10px;
+}
+.modal-button {
+    background-color: transparent;
+    border: 1px solid var(--braker);
+    border-radius: 3px;
+    color: white;
+    padding: 3px;
+    margin: 10px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
 /* RWD */
 @media only screen and (max-width: 850px) {
     #projects-contaier {

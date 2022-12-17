@@ -13,8 +13,8 @@ modal.style.display = 'none';
 
 // Toggle modal window
 const toggleModal = (index) => {
-    modal.style.display === 'none' ? modal.style.display = 'block' : modal.style.display = 'none';
-    if(modal.style.display === 'block') {
+    modal.style.display === 'none' ? modal.style.display = 'grid' : modal.style.display = 'none';
+    if(modal.style.display === 'grid') {
         fillModal(index);
     }
 }

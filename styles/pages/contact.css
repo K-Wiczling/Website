@@ -19,6 +19,9 @@ textarea {
     max-width: 400px;
     min-height: 200px;
 }
+input, textarea {
+    color: black;
+}
 label {
     width: 400px;
     display: block;
@@ -45,4 +48,33 @@ form {
 }
 .single-contact {
     margin-bottom: 5px;
+}
+h3 {
+    border-bottom: 1px solid white;
+}
+
+/* RWD */
+@media only screen and (max-width: 850px) {
+   
+    #contact-container {
+        grid-template-columns: 1fr;
+    }
+    #contact-info {
+        justify-self: center;
+        width: 400px;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 550px) {
+
+    #contact-info, input, label, textarea, form {
+        width: 80vw;
+    }
+    textarea {
+        
+    }
+
+}
+@media only screen and (max-width: 360px) {
+
 }
