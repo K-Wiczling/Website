@@ -19,8 +19,8 @@ const toggleModal = (index) => {
     }
 }
 
+// Fill the informations of the project in to modal elements
 const fillModal = (index) => {
-    console.log(projectsList[index]);
 
     const project = projectsList[index]
     header.innerText = project.name;
