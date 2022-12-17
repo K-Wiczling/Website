@@ -19,7 +19,7 @@ export const projectsList = [
         "img": "../assets/images/hp-api.jpg",
         "alt": "letter from hogwart",
         "repoSrc": "https://github.com/K-Wiczling/hp-api",
-        "appSrc": "https://k-wiczling.github.io/hp-api/src",
+        "appSrc": "https://k-wiczling.github.io/HP-API/src/",
     },
     {
         "name": "Rrobofriends",
